@@ -4,7 +4,7 @@ require_once dirname(__DIR__) . '/src/MaintenanceExtension.php';
 
 $app = new Silex\Application();
 $app->register(new \MaintenanceExtension(), array(
-    'maintenance.path' => __DIR__ . '/maintenance',
+    'maintenance.lock' => __DIR__ . '/maintenance',
     'maintenance.file' => __DIR__ . '/maintenance.html',
 ));
 

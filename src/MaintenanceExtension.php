@@ -83,9 +83,9 @@ class MaintenanceExtension implements ExtensionInterface
      */
     public function register(Application $app)
     {
-        if (isset($app['maintenance.path'])
+        if (isset($app['maintenance.lock'])
                 && isset($app['maintenance.file'])
-                && is_file($app['maintenance.path'])) {
+                && is_file($app['maintenance.lock'])) {
 
             $app->match('/{path}', function () use ($app) {
                 if (isset($app['twig'])) {

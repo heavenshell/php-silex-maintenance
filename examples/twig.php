@@ -8,7 +8,7 @@ $app->register(new Silex\Extension\TwigExtension(), array(
     'twig.class_path' => getenv('TWIG_PATH')
 ));
 $app->register(new \MaintenanceExtension(), array(
-    'maintenance.path' => __DIR__ . '/maintenance',
+    'maintenance.lock' => __DIR__ . '/maintenance',
     'maintenance.file' => 'maintenance.twig',
 ));
 
