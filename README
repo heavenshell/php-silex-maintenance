@@ -1,0 +1,22 @@
+Silex Maintenance extension.
+
+This extension is for the Silex microframework enables to show maintenance html.
+
+    <?php
+    require_once 'silex.phar';
+    require_once dirname(__DIR__) . '/src/MaintenanceExtension.php';
+
+    $app = new Silex\Application();
+    $app->register(new \MaintenanceExtension(), array(
+        'maintenance.path' => __DIR__ . '/maintenance',
+        'maintenance.file' => __DIR__ . '/maintenance.html',
+    ));
+
+    $app->get('/', function () use ($app) {
+        return json_encode(array('status' => true ));
+    });
+
+
+If you want to show maintenance.html, you just put file to 'maintenance.path'.
+    $ touch maintenance
+MaintenanceExtension automatically find maintenance html file and response to client.
