@@ -8,7 +8,7 @@ This extension is for the Silex microframework enables to show maintenance html.
 
     $app = new Silex\Application();
     $app->register(new \MaintenanceExtension(), array(
-        'maintenance.path' => __DIR__ . '/maintenance',
+        'maintenance.lock' => __DIR__ . '/maintenance',
         'maintenance.file' => __DIR__ . '/maintenance.html',
     ));
 
@@ -17,6 +17,6 @@ This extension is for the Silex microframework enables to show maintenance html.
     });
 
 
-If you want to show maintenance.html, you just put file to 'maintenance.path'.
+If you want to show maintenance.html, you just put file to 'maintenance.lock'.
     $ touch maintenance
 MaintenanceExtension automatically find maintenance html file and response to client.
