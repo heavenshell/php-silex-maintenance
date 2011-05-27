@@ -45,7 +45,6 @@
  * @author    Masao Maeda <brt.river@gmail.com>
  * @author    Shinya Ohyanagi <sohyanagi@gmail.com>
  * @license   New BSD License
- * @see       https://github.com/heavenshell/php-net-kyototycoon
  */
 
 use Silex\Application;
@@ -65,7 +64,6 @@ use Symfony\Component\HttpFoundation\Response;
  * @author    Masao Maeda <brt.river@gmail.com>
  * @author    Shinya Ohyanagi <sohyanagi@gmail.com>
  * @license   New BSD License
- * @see       https://github.com/heavenshell/php-net-kyototycoon
  */
 class MaintenanceExtension implements ExtensionInterface
 {
