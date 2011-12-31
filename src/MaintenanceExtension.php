@@ -4,7 +4,7 @@
  *
  * PHP version 5.3
  *
- * Copyright (c) 2011 Shinya Ohyanagi, All rights reserved.
+ * Copyright (c) 2011-2012 Shinya Ohyanagi, All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -36,41 +36,41 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @use       \Silex\Application
- * @use       \Silex\ExtensionInterface
+ * @use       \Silex\ServiceProviderInterface
  * @category  \Silex
- * @package   \Silex\Extensions
+ * @package   \Silex\ServiceProviderInterface
  * @version   $id$
  * @copyright (c) 2011 Masao Maeda
- * @copyright (c) 2011 Shinya Ohyanagi
+ * @copyright (c) 2011-2012 Shinya Ohyanagi
  * @author    Masao Maeda <brt.river@gmail.com>
  * @author    Shinya Ohyanagi <sohyanagi@gmail.com>
  * @license   New BSD License
  */
 
 use Silex\Application;
-use Silex\ExtensionInterface;
+use Silex\ServiceProviderInterface;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Maintenance extension.
  *
  * @use       \Silex\Application
- * @use       \Silex\ExtensionInterface
+ * @use       \Silex\ServiceProviderInterface
  * @category  \Silex
- * @package   \Silex\Extensions
+ * @package   \Silex\ServiceProviderInterface
  * @version   $id$
  * @copyright (c) 2011 Masao Maeda
- * @copyright (c) 2011 Shinya Ohyanagi
+ * @copyright (c) 2011-2012 Shinya Ohyanagi
  * @author    Masao Maeda <brt.river@gmail.com>
  * @author    Shinya Ohyanagi <sohyanagi@gmail.com>
  * @license   New BSD License
  */
-class MaintenanceExtension implements ExtensionInterface
+class MaintenanceExtension implements ServiceProviderInterface
 {
     /**
      * Version.
      */
-    const VERSION = '0.0.1';
+    const VERSION = '0.0.2';
 
     /**
      * Register extension.

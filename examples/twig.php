@@ -3,7 +3,7 @@ require_once 'silex.phar';
 require_once dirname(__DIR__) . '/src/MaintenanceExtension.php';
 
 $app = new Silex\Application();
-$app->register(new Silex\Extension\TwigExtension(), array(
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path'       => __DIR__ . '/views',
     'twig.class_path' => getenv('TWIG_PATH')
 ));
